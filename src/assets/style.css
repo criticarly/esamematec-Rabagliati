@@ -1,5 +1,5 @@
 body{
-    background-color: rgba(214, 173, 230, 0.582);
+    background-color: rgba(234, 40, 255, 0.185);
 }
 
 #carosello{
@@ -14,12 +14,12 @@ body{
 
 .carousel-control-prev,
 .carousel-control-next{
-    background-color: rgba(234, 0, 255, 0.103);
+    background-color: rgba(234, 0, 255, 0.055);
 };
 
 
 .carousel-indicators li {
-    background-color: rgb(234, 0, 255,0.10);
+    background-color: rgb(234, 0, 255);
 };
 
 input {

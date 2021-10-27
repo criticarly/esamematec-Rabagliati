@@ -5,12 +5,16 @@
             <div class="form-holder"> 
                 <div class="form-content"> 
                     <div class="form-items"> 
-                        <h3>Register Today</h3> 
-                        <p>Fill in the data below.</p> 
+                        <h3>Lasciaci una recensione</h3> 
+                        <p>Per noi la tua opinione è importante</p> 
                         <form class="review-form" @submit.prevent="onSubmit"> 
                           <p>
                             <label for="name">Nome:</label>
                             <input id="name" v-model="name" required />
+                          </p>
+                          <p>
+                            <label for="surname">Cognome:</label>
+                            <input id="surname" v-model="surname" required />
                           </p>
                           <p>
                             <label for="review">Recensione:</label>
@@ -40,7 +44,7 @@
     </div> 
                        <ul id="example-1"> 
     <li v-for="item in reviews" :key="item.review"> 
-      {{item.name}} {{item.surname}} {{item.email}} {{item.rating}}/10 - {{item.review}} 
+      {{item.name}} {{item.surname}} {{item.email}} {{item.rating}}/5 - {{item.review}} 
     </li> 
   </ul>
 </div> 
@@ -50,7 +54,7 @@
 export default{ 
   data: function () { 
       return { 
-        name: null, 
+        name: "Carlotta", 
         surname: null, 
         email: null, 
         review: null, 
@@ -139,7 +143,7 @@ html, body {
 } 
  
 .form-content h3 { 
-    color: #fff; 
+    color: rgb(185, 40, 40); 
     text-align: left; 
     font-size: 28px; 
     font-weight: 600; 

@@ -17,11 +17,11 @@
               <div class="card-body">
                 <h4 class="card-title">{{ prodotti.product }}</h4>
                 <div class="card-text">
-                  <p> Dettagli tecnici: {{prodotti.features}}</p>
-                  <p v-if="prodotti.inventory >= 100">Il prodotto è disponibile</p>
-                  <p v-else-if="prodotti.inventory > 0">Meno di 100 prodotti disponibili</p>
+                  <p> Descrizione: {{prodotti.features}}</p>
+                  <p v-if="prodotti.inventory >= 100">Disponibile</p>
+                  <p v-else-if="prodotti.inventory > 0"> Disponibilità limitata</p>
                   <p v-else>Esaurito</p>
-                  <p v-show="prodotti.onSale">Acquistabile!</p>
+                  <p v-show="prodotti.onSale">Acquistalo!</p>
                   <span class="eyebrow, prodotti-brand">{{ prodotti.brand }}</span>
                   <span class="prodotti-price">{{ prodotti.price }} euro</span>
                 </div>
@@ -31,7 +31,7 @@
 
     <BottoneCarrello v-bind:prodotto="prodotti">Aggiungi al carrello</BottoneCarrello>
     <button type="button" class="btn btn-link">
-    <router-link class="prodotti-link" v-bind:to="{ name: 'Dettagli', params: { id: prodotti.id } }">Dettagli</router-link></button>
+    <router-link class="prodotti-link" v-bind:to="{ name: 'Dettagli', params: { id: prodotti.id } }">Per saperne di più</router-link></button>
   </b-card>
       </div> 
   </div>

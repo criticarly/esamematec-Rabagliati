@@ -5,11 +5,10 @@
       {{prodotti.description}}
     </p>
     <p v-if="prodotti.inventory > 10">Disponibile</p>
-    <p v-else-if="prodotti.inventory > 0">In esaurimento</p>
+    <p v-else-if="prodotti.inventory > 0">Disponibilità limitata</p>
     <p v-else>Non disponibile</p>
     <p v-show="prodotti.onSale">In vendita!</p>
-    <p>Acquistalo a {{ prodotti.price }} euro !</p>
-    <p>Altri colori disponibili:</p>
+    <p>Acquistalo a soli {{ prodotti.price }} euro !</p>
 
      <div id="carosello">
     <b-carousel
@@ -33,7 +32,7 @@
   </div>
    
     <p>
-      <router-link v-bind:to="{ name: 'Home' }">Torna alla lista</router-link>
+      <router-link v-bind:to="{ name: 'Home' }">Torna alla homepage</router-link>
     </p>
   </div>
 </template>
@@ -53,9 +52,3 @@ export default {
   }
 };
 </script>
-
-<style scoped>
-.carosello{
-  
-}
-</style>

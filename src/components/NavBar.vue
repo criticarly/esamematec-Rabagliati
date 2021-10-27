@@ -2,7 +2,7 @@
   <div id="nav" class="nav">
     
     <nav>
-      <router-link v-bind:to="{ name: 'Home' }">Prodotti</router-link>&nbsp;|&nbsp;
+      <router-link v-bind:to="{ name: 'Home' }">Make up</router-link>&nbsp;|&nbsp;
       <router-link v-bind:to="{ name: 'Recensioni' }">Recensioni</router-link> &nbsp;|&nbsp;
       <router-link v-bind:to="{ name: 'Carrello' }">Carrello {{carrello}}</router-link>
     </nav>

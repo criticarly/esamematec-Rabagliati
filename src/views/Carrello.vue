@@ -2,9 +2,9 @@
   <div>
   
     
-    <h1>Questo è il cartello di {{ $store.getters.nomeEsteso }}</h1>
+    <h1>Ecco il tuo carrello {{ $store.getters.nomeEsteso }}</h1>
+    <p>Procedi con l'acquisto oppure svuota il carrello</p>
     <button @click="svuotaCarrello" type="button" class="btn btn-outline-light">Svuota</button>
-    <p>Hai acquistato:</p>
     <ProdottoCarrello
       v-for="elem in prodottiCarrello" :key="elem.id" :prodotti="elem"
     ></ProdottoCarrello>
