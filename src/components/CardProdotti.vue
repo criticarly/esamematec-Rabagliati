@@ -1,17 +1,21 @@
 <template>
+
 <div>
-  <b-card
-    img-alt="Image"
-    img-top
-    tag="article"
-    style="max-width: 20rem;"
-    class="mb-2"
-  >
-    <b-card-text>
-        <div class="product-image">
-          <img v-bind:src="prodotti.image" class="card-img-top">
-            <div class="card-body">
-              <h4 class="card-title">{{ prodotti.product }}</h4>
+  <div class="container">
+    <div class="row">
+     <div class="col-sm">
+        <b-card
+          img-alt="Image"
+          img-top
+          tag="article"
+         style="max-width: 20rem;"
+          class="mb-2"
+        >
+        <b-card-text>
+            <div class="product-image">
+              <img v-bind:src="prodotti.image" class="card-img-top">
+              <div class="card-body">
+                <h4 class="card-title">{{ prodotti.product }}</h4>
                 <div class="card-text">
                   <p> Dettagli tecnici: {{prodotti.features}}</p>
                   <p v-if="prodotti.inventory >= 100">Il prodotto è disponibile</p>
@@ -26,8 +30,14 @@
     </b-card-text>
 
     <BottoneCarrello v-bind:prodotto="prodotti">Aggiungi al carrello</BottoneCarrello>
-    <router-link class="prodotti-link" v-bind:to="{ name: 'Dettagli', params: { id: prodotti.id } }">Dettagli</router-link>
+    <button type="button" class="btn btn-link">
+    <router-link class="prodotti-link" v-bind:to="{ name: 'Dettagli', params: { id: prodotti.id } }">Dettagli</router-link></button>
   </b-card>
+      </div> 
+  </div>
+</div>
+ 
+
 </div>
 
 </template>
@@ -52,7 +62,7 @@ export default {
   float: left;
 }
 
-.prodotti-card {
+/*.prodotti-card {
   padding: 20px;
   margin-bottom: 24px;
   transition: all 0.2s linear;
@@ -64,9 +74,8 @@ export default {
 }
 .prodotti-card > .title {
   margin: 0;
-}
+}*/
 .prodotti-link {
-  color: black;
   text-decoration: none;
   font-weight: 100;
 }

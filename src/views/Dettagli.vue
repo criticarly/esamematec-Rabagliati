@@ -53,3 +53,9 @@ export default {
   }
 };
 </script>
+
+<style scoped>
+.carosello{
+  
+}
+</style>

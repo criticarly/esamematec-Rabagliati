@@ -32,8 +32,7 @@ export default {
   props: ["prodotti"],
   data: function() {
     return {};
-  },
- 
+  }
 };
 </script>
 

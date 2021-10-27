@@ -14,11 +14,12 @@ body{
 
 .carousel-control-prev,
 .carousel-control-next{
-    background-color: rgba(0, 0, 0, 0);
+    background-color: rgba(234, 0, 255, 0.103);
 };
 
+
 .carousel-indicators li {
-    background-color: rgb(234, 0, 255);
+    background-color: rgb(234, 0, 255,0.10);
 };
 
 input {

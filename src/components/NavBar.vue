@@ -1,13 +1,15 @@
 <template>
   <div id="nav" class="nav">
+    
     <nav>
       <router-link v-bind:to="{ name: 'Home' }">Prodotti</router-link>&nbsp;|&nbsp;
       <router-link v-bind:to="{ name: 'Recensioni' }">Recensioni</router-link> &nbsp;|&nbsp;
       <router-link v-bind:to="{ name: 'Carrello' }">Carrello {{carrello}}</router-link>
-      <button @click="svuotaCarrello" type="button" class="btn btn-outline-primary btn-sm">Svuota</button>
     </nav>
   </div>
 </template>
+
+
 
 <script>
 export default {
@@ -19,12 +21,7 @@ export default {
       return this.$store.getters.numeroProdotti;
     }
   },
-  methods: {
-    svuotaCarrello: function() {
-      this.$store.commit("SVUOTA_CARRELLO");
-    }
-  },
-
+  
 };
 </script>
 
@@ -39,17 +36,17 @@ export default {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
   font-size: 1.5em;
-  color: #39b982;
+  color: #ffffff;
   text-decoration: none;
 }
 .nav .nav-item {
   box-sizing: border-box;
   margin: 0 5px;
-  color: rgba(0, 0, 0, 0.5);
+  color: rgba(0, 0, 0, 0.89);
   text-decoration: none;
 }
 .nav .nav-item.router-link-exact-active {
-  color: #39b982;
-  border-bottom: solid 2px #39b982;
+  color: #ffffff;
+  border-bottom: solid 2px #ffffff;
 }
 </style>
