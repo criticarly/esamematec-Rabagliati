@@ -6,7 +6,7 @@
 
 <script>
 export default {
-  name: "Makeup Store",
+  name: "Makeup Store-----",
   props: {
     msg: String,
   },
