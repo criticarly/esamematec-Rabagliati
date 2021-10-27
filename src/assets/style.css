@@ -1,0 +1,29 @@
+body{
+    background-color: rgba(214, 173, 230, 0.582);
+}
+
+#carosello{
+    width: 50%;
+    height: 50%;
+}
+
+#Carte{
+    width: 50%;
+    height: 50%;
+}
+
+.carousel-control-prev,
+.carousel-control-next{
+    background-color: rgba(0, 0, 0, 0);
+};
+
+.carousel-indicators li {
+    background-color: rgb(234, 0, 255);
+};
+
+input {
+    width: 30%;
+    padding: 12px 20px;
+    margin: 20px 0;
+    box-sizing: border-box;
+  }
