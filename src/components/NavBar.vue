@@ -4,7 +4,7 @@
     <nav>
       <div class="container">
       <router-link v-bind:to="{ name: 'Home' }"><a class="navbar-brand" href="#">
-      <img src="https://cdn-user-icons.flaticon.com/52435/52435626/1635358679877.svg?token=exp=1635359595~hmac=0fc1d14b14a6b848fb476f79b8a0682e" alt="" width="37" height="37">
+      <img src="https://cdn-icons.flaticon.com/png/512/1005/premium/1005786.png?token=exp=1635624848~hmac=875843357820e82b7f1e8c4e4f55aaf6" alt="" width="37" height="37">
         My MakeUp Store
         </a></router-link>
       </div>
