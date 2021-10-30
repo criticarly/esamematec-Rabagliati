@@ -1,7 +1,7 @@
 <template>
   <div>
 
-      <button @click="addToCart" type="button" class="btn btn-outline-primary btn-sm">
+    <button @click="addToCart" type="button" class="">
       <slot></slot>
     </button>
    
@@ -19,5 +19,11 @@ export default {
 };     
 </script>
 
-<style lang="scss" scoped></style>
-
+<style scoped>
+button {
+  background-color: rgba(255, 255, 255, 0);
+  color: #B97375;
+  border: 2px solid #B97375;
+  border-radius: 4px;
+  }
+</style>

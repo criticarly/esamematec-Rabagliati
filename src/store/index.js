@@ -11,7 +11,7 @@ export default new Vuex.Store({
     prodotti: [
       {
         id: 1,
-        product: "Holiday Vibes- Calendario Dell'Avvento 2021",
+        product: "Calendario Dell'Avvento 2021",
         brand: "Sephora",
         description:
           "Il Calendario dell'Avvento della bellezza, imperdibile! Se c'è un prodotto da non perdere a Natale ogni anno, è questo! Il Calendario dell'Avvento di bellezza. E c'è più di un motivo per innamorarsi. Questa edizione del 2021 è più gioiosa e generosa dei precedenti calendari dell'avvento. Dal 1 al 24 dicembre, apri ogni box per scoprire giorno dopo giorno una nuova sorpresa di bellezza. Trattamenti per il viso, per gli occhi, quanto basta per mettere un po' di colore sulle palpebre, sulle labbra e molto altro ancora.",

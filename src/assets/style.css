@@ -1,10 +1,10 @@
 body{
-    background-color: rgba(234, 40, 255, 0.185);
+    background-color: #f1e4e89d;
 }
 
 #carosello{
-    width: 50%;
-    height: 50%;
+    width: 40%;
+    height: 40%;
 }
 
 #Carte{
@@ -14,12 +14,12 @@ body{
 
 .carousel-control-prev,
 .carousel-control-next{
-    background-color: rgba(234, 0, 255, 0.055);
+    background-color: #e2dcde2a;
 };
 
 
 .carousel-indicators li {
-    background-color: rgb(234, 0, 255);
+    background-color: #e2dcde3b;
 };
 
 input {
@@ -28,3 +28,20 @@ input {
     margin: 20px 0;
     box-sizing: border-box;
   }
+
+h2 {
+color: #2d2d34;
+}
+
+h3 {
+    color: #2d2d34;
+    }
+
+p  {
+    color: #2d2d34;
+}
+
+.backhome {
+    color: #b97375;
+    }
+

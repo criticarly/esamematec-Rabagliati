@@ -21,19 +21,19 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
+  color: #2d2d34;
 }
 
 #nav {
-  padding: 30px;
+  padding: 40px;
 }
 
 #nav a {
   font-weight: bold;
-  color: #2c3e50;
+  color: #2d2d34;
 }
 
 #nav a.router-link-exact-active {
-  color: #ff0062;
+  color: #b97375;
 }
 </style>

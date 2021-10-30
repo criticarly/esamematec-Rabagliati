@@ -1,5 +1,5 @@
 <template>
-<div>
+  <div class="col-4">
   <b-card
     img-alt="Image"
     img-top
@@ -14,11 +14,13 @@
               <h4 class="card-title">{{ prodotti.product }}</h4>
                 <div class="card-text">
                   <span class="eyebrow, prodotti-brand">{{ prodotti.brand }}</span>
-                  <span class="prodotti-price">{{ prodotti.price }} euro</span>
+                  <span class="prodotti-price">{{ prodotti.price }} €</span>
                 </div>
             </div>
         </div>
+        
     </b-card-text>
+    
 
   </b-card>
   
@@ -59,7 +61,7 @@ export default {
   margin: 0;
 }
 .prodotti-link {
-  color: black;
+  color: #2d2d34;
   text-decoration: none;
   font-weight: 100;
 }

@@ -1,8 +1,13 @@
 <template>
   <div>
-    <h1>Makeup Store</h1>
-    <h2>Cosmetica</h2>
-    <CardProdotti v-for="elem in prodotti" :key="elem.id" :prodotti="elem"></CardProdotti>
+    <br><br>
+    <h2>Makeup Store</h2>
+    <br>
+    <div class="container">
+      <div class="row">
+        <CardProdotti v-for="elem in prodotti" :key="elem.id" :prodotti="elem"></CardProdotti>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -44,4 +49,12 @@ export default {
   text-decoration: none;
   font-weight: 100;
 }
+
+/*h2 { 
+    color: #73008c; 
+} 
+
+h3 { 
+    color: #85008c; 
+}*/
 </style>

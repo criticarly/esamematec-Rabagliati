@@ -1,17 +1,24 @@
 <template>
   <div>
-  
-    
-    <h1>Ecco il tuo carrello {{ $store.getters.nomeEsteso }}</h1>
-    <p>Procedi con l'acquisto oppure svuota il carrello</p>
-    <button @click="svuotaCarrello" type="button" class="btn btn-outline-light">Svuota</button>
+    <div class="container">
+      <router-link v-bind:to="{ name: 'Home' }"><a class="backhome" href="#">
+      <img src="https://cdn-user-icons.flaticon.com/52435/52435626/1635589119808.svg?token=exp=1635590020~hmac=208ff43804d5d5686e42acb9c13c6695" alt="" width="25" height="25">
+        Torna alla homepage
+        </a></router-link>
+    </div>
+      <br><br>
+    <h2>Benvenuta nel tuo shop {{ $store.getters.nomeEsteso }}</h2>
+    <p>Continua ad acquistare oppure svuota il carrello</p>
+    <button @click="svuotaCarrello" type="button">Svuota</button>
+    <br><br><br>
+      <div class="container">
+      <div class="row">
     <ProdottoCarrello
       v-for="elem in prodottiCarrello" :key="elem.id" :prodotti="elem"
     ></ProdottoCarrello>
-
-    
+    </div>
+    </div>
   </div>
-
 </template>
 
 <script>
@@ -37,7 +44,14 @@ export default {
 };
 
 </script>
-
+<style scoped>
+button {
+  background-color: #b97375;
+  color: #ffffff;
+  border: 1px solid #b97375;
+  border-radius: 3px;
+  }
+</style>
 
 
       

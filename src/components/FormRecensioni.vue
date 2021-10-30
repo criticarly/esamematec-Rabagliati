@@ -1,60 +1,58 @@
 <template> 
-<div> 
-      <div class="form-body"> 
-        <div class="row"> 
-            <div class="form-holder"> 
-                <div class="form-content"> 
-                    <div class="form-items"> 
-                        <h3>Lasciaci una recensione</h3> 
-                        <p>Per noi la tua opinione è importante</p> 
-                        <form class="review-form" @submit.prevent="onSubmit"> 
-                          <p>
-                            <label for="name">Nome:</label>
-                            <input id="name" v-model="name" required />
-                          </p>
-                          <p>
-                            <label for="surname">Cognome:</label>
-                            <input id="surname" v-model="surname" required />
-                          </p>
-                          <p>
-                            <label for="review">Recensione:</label>
-                            <textarea id="review" v-model="review" required></textarea>
-                          </p>
-                          <p>
-                            <label for="rating">Voto:</label>
-                            <select id="rating" v-model.number="rating" required>
-                              <option>5</option>
-                              <option>4</option>
-                              <option>3</option>
-                              <option>2</option>
-                              <option>1</option>
-                            </select>
-                          </p>
+  <div>
+    <div class="form-holder"> 
+      <div class="form-content"> 
+        <div class="form-items"> 
+          <h3>Lasciaci una recensione</h3> 
+          <p><b>Per noi la tua opinione è importante</b></p> 
+          <form class="review-form" @submit.prevent="onSubmit"> 
+            <p>
+              <label for="name">Nome:</label>
+              <input id="name" v-model="name" required />
+            </p>
+            <p>
+              <label for="surname">Cognome:</label>
+              <input id="surname" v-model="surname" required />
+            </p>
+            <p>
+              <label for="e-mail">E-mail:</label>
+              <input id="e-mail" v-model="email" required />
+            </p>
+            <p>
+              <label for="review">Recensione:</label>
+              <textarea id="review" v-model="review" required></textarea>
+            </p>
+            <p>
+              <label for="rating">Voto:</label>
+              <select id="rating" v-model.number="rating" required>
+                <option>5</option>
+                <option>4</option>
+                <option>3</option>
+                <option>2</option>
+                <option>1</option>
+              </select>
+            </p>
 
-                          <p> 
-                            <input type="submit" value="Invia"/> 
-                          </p>
-
-                        </form>
-  
-                        </div> 
-                </div> 
-            </div> 
+            <p> 
+              <input type="submit" value="Invia"/> 
+            </p>
+          </form>
         </div> 
+      </div> 
     </div> 
-                       <ul id="example-1"> 
-    <li v-for="item in reviews" :key="item.review"> 
-      {{item.name}} {{item.surname}} {{item.email}} {{item.rating}}/5 - {{item.review}} 
-    </li> 
-  </ul>
-</div> 
+    <ul id="example-1"> 
+      <li v-for="item in reviews" :key="item.review"> 
+        {{item.name}} {{item.surname}} {{item.email}} {{item.rating}}/5 - {{item.review}} 
+      </li> 
+    </ul>
+  </div> 
 </template> 
    
 <script> 
 export default{ 
   data: function () { 
       return { 
-        name: "Carlotta", 
+        name: null, 
         surname: null, 
         email: null, 
         review: null, 
@@ -91,26 +89,25 @@ export default{
  
 *, body { 
     font-family: 'Poppins', sans-serif; 
-    font-weight: 400; 
+    font-weight: 400;
     -webkit-font-smoothing: antialiased; 
     text-rendering: optimizeLegibility; 
     -moz-osx-font-smoothing: grayscale; 
 } 
  
-html, body { 
+/*html, body { 
     height: 100%; 
     background-color: #152733; 
     overflow: hidden; 
-} 
- 
- 
+}*/
+
 .form-holder { 
-      display: flex; 
-      flex-direction: column; 
-      justify-content: center; 
-      align-items: center; 
-      text-align: center; 
-      min-height: 100vh; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 100vh;
 } 
  
 .form-holder .form-content { 
@@ -129,7 +126,7 @@ html, body {
 } 
  
 .form-content .form-items { 
-    border: 3px solid #fff; 
+    border: 3px solid #ceb1be; 
     padding: 40px; 
     display: inline-block; 
     width: 100%; 
@@ -143,8 +140,8 @@ html, body {
 } 
  
 .form-content h3 { 
-    color: rgb(185, 40, 40); 
-    text-align: left; 
+    color: #ceb1be; 
+    text-align: center; 
     font-size: 28px; 
     font-weight: 600; 
     margin-bottom: 5px; 
@@ -155,8 +152,8 @@ html, body {
 } 
  
 .form-content p { 
-    color: #fff; 
-    text-align: left; 
+    color: #ceb1be; 
+    text-align: center; 
     font-size: 17px; 
     font-weight: 300; 
     line-height: 20px; 
@@ -164,39 +161,24 @@ html, body {
 } 
  
  
-.form-content label, .was-validated .form-check-input:invalid~.form-check-label, .was-validated .form-check-input:valid~.form-check-label{ 
-    color: #fff; 
+.form-content label{ 
+    color: #ceb1be; 
 } 
  
 .form-content input[type=text], .form-content input[type=password], .form-content input[type=email], .form-content select { 
-    width: 100%; 
+    width: 20%; 
     padding: 9px 20px; 
-    text-align: left; 
-    border: 0; 
+    text-align: center; 
+    border-color: #ceb1be; 
     outline: 0; 
     border-radius: 6px; 
-    background-color: #fff; 
+    background-color: rgb(255, 255, 255); 
     font-size: 15px; 
     font-weight: 300; 
-    color: #8D8D8D; 
+    color: #ceb1be; 
     -webkit-transition: all 0.3s ease; 
     transition: all 0.3s ease; 
     margin-top: 16px; 
-} 
- 
- 
-.btn-primary{ 
-    background-color: #6C757D; 
-    outline: none; 
-    border: 0px; 
-     box-shadow: none; 
-} 
- 
-.btn-primary:hover, .btn-primary:focus, .btn-primary:active{ 
-    background-color: #495056; 
-    outline: none !important; 
-    border: none !important; 
-     box-shadow: none; 
 } 
  
 .form-content textarea { 
@@ -209,7 +191,6 @@ html, body {
     border: 0; 
     font-size: 15px; 
     font-weight: 300; 
-    color: #8D8D8D; 
     outline: none; 
     resize: none; 
     height: 120px; 
@@ -219,23 +200,11 @@ html, body {
 } 
  
 .form-content textarea:hover, .form-content textarea:focus { 
-    border: 0; 
-    background-color: #ebeff8; 
-    color: #8D8D8D; 
+  background-color: white;  
 } 
  
 .mv-up{ 
     margin-top: -9px !important;
     margin-bottom: 8px !important; 
 } 
- 
-.invalid-feedback{ 
-    color: #ff606e; 
-} 
- 
-.valid-feedback{ 
-   color: #2acc80; 
-} 
- 
- 
 </style>
