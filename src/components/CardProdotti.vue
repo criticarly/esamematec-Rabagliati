@@ -73,6 +73,8 @@ export default {
 .prodotti-link {
   text-decoration: none;
   font-weight: 100;
+  color: #b97375;
 }
+
 
 </style>

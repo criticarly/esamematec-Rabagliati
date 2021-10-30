@@ -21,8 +21,8 @@ export default {
 
 <style scoped>
 button {
-  background-color: rgba(255, 255, 255, 0);
-  color: #B97375;
+  background-color: #B97375;
+  color: white;
   border: 2px solid #B97375;
   border-radius: 4px;
   }
