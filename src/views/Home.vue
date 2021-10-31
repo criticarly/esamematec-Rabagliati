@@ -49,12 +49,4 @@ export default {
   text-decoration: none;
   font-weight: 100;
 }
-
-/*h2 { 
-    color: #73008c; 
-} 
-
-h3 { 
-    color: #85008c; 
-}*/
 </style>
