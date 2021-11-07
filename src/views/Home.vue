@@ -3,7 +3,7 @@
     <br><br>
     <h2>Makeup Store</h2>
     <br>
-    <div class="container">
+    <div class="container-fluid">
       <div class="row">
         <CardProdotti v-for="elem in prodotti" :key="elem.id" :prodotti="elem"></CardProdotti>
       </div>

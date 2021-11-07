@@ -1,6 +1,5 @@
 <template>
-
-<div class="col-4">
+  <div class="col-md-4">
     <b-card
       img-alt="Image"
       img-top
@@ -30,9 +29,7 @@
       <button type="button" class="btn btn-link">
       <router-link class="prodotti-link" v-bind:to="{ name: 'Dettagli', params: { id: prodotti.id } }">Per saperne di più</router-link>
       </button>
-    </b-card>     
- 
-
+    </b-card>    
 </div>
 
 </template>

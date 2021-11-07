@@ -2,9 +2,9 @@
   <div id="nav" class="nav">
     
     <nav>
-      <div class="container">
+      <div class="container-fluid">
       <router-link v-bind:to="{ name: 'Home' }"><a class="navbar-brand" href="#">
-      <img src="https://cdn-icons.flaticon.com/png/512/1005/premium/1005786.png?token=exp=1635624848~hmac=875843357820e82b7f1e8c4e4f55aaf6" alt="" width="37" height="37">
+      <img src="https://cdn-icons-png.flaticon.com/512/775/775193.png" alt="" width="37" height="37">
         My MakeUp Store
         </a></router-link>
       </div>
