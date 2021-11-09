@@ -42,7 +42,9 @@
     </div> 
     <ul id="example-1"> 
       <li v-for="item in reviews" :key="item.review"> 
-        {{item.name}} {{item.surname}} {{item.email}} {{item.rating}}/5 - {{item.review}} 
+        {{item.name}} {{item.surname}} <br>
+        {{item.email}} <br>
+        {{item.rating}}/5 - {{item.review}} 
       </li> 
     </ul>
   </div> 
