@@ -1,12 +1,12 @@
 <template>
   <div>
     <div class="container"><br><br>
-      <router-link v-bind:to="{ name: 'Home' }"
-        ><a class="backhome" href="#">
+      <router-link v-bind:to="{ name: 'Home' }">
+        <a class="backhome" href="#">
            <img src="https://cdn-icons-png.flaticon.com/512/5227/5227701.png" alt="" width="25" height="25">
         Torna alla homepage
-        </a></router-link
-      >
+        </a>
+      </router-link>
     </div>
     <br /><br />
     <h1>{{ prodotti.brand }} - {{ prodotti.product }}</h1>
@@ -58,9 +58,7 @@
         <p v-else>Non disponibile</p>
         <p v-show="prodotti.onSale">In vendita!</p>
         <p>Acquistalo a soli {{ prodotti.price }} €</p>
-        <BottoneCarrello v-bind:prodotto="prodotti"
-          >Aggiungi al carrello</BottoneCarrello
-        >
+        <BottoneCarrello v-bind:prodotto="prodotti">Aggiungi al carrello</BottoneCarrello>
         </div>
       </div>
       </div>

@@ -37,9 +37,9 @@
               <input type="submit" value="Invia"/> 
             </p>
           </form>
+          </div>
         </div> 
       </div> 
-    </div> 
     <ul id="example-1"> 
       <li v-for="item in reviews" :key="item.review"> 
         {{item.name}} {{item.surname}} <br>
