@@ -15,7 +15,7 @@ Vue.config.productionTip = false;
 
 Vue.component("BottoneCarrello", BottoneCarrello);
 
-new Vue({
+new Vue({ //istanza Vue root da cui discende il resto dell'applicazione
   router,
   store,
   render: (h) => h(App),

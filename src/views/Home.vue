@@ -14,11 +14,11 @@
 <script>
 import CardProdotti from "@/components/CardProdotti.vue";
 
-export default {
+export default { //dichiarare un componente che può essere registrato e riutilizzato in seguito
   components: {
     CardProdotti
   },
-  data: function() {
+  data: function() { //dichiarare le dataproprietà come funzioni, altrimenti non saranno reattive
     return {};
   },
   methods: {},

@@ -7,7 +7,7 @@ export default new Vuex.Store({
   state: {
     prodottiCarrello:[],
     reviews:[],
-    prossimoId: 3,
+    /*prossimoId: 3,*/
     prodotti: [
       {
         id: 1,
@@ -21,7 +21,7 @@ export default new Vuex.Store({
         image4: "https://www.sephora.it/on/demandware.static/-/Sites-masterCatalog_Sephora/default/dwf78f1ea8/images/hi-res/alternates/PID_alternate4/PID_alternate4_1019/P10018361_4.jpg",
         //selectedModel: 0,
         onSale: true,
-        inventory: 100,
+        inventory: 2,
         price: 39.99,
         features: "L'imperdibile Calendario dell'Avvento ti sta aspettando. 24 prodotti per il make up, la cura della pelle, il corpo e gli accessori per assaporare un tocco di shine, cocooning e chill quotidianamente e durante l'attesa del 24 dicembre!",
       },

@@ -1,22 +1,22 @@
 <template>
   <div>
     <div class="container"><br><br>
-      <router-link v-bind:to="{ name: 'Home' }"><a class="backhome" href="#">
-      <img src="https://cdn-icons-png.flaticon.com/512/5227/5227701.png" alt="" width="25" height="25">
-        Torna alla homepage
-        </a></router-link>
+      <router-link v-bind:to="{ name: 'Home' }">
+        <a class="backhome" href="#">
+          <img src="https://cdn-icons-png.flaticon.com/512/5227/5227701.png" alt="" width="25" height="25">
+          Torna alla homepage
+        </a>
+      </router-link>
     </div>
       <br><br>
     <h2>Benvenuta nel tuo shop {{ $store.getters.nomeEsteso }}</h2>
     <p>Continua ad acquistare oppure svuota il carrello</p>
     <button @click="svuotaCarrello" type="button">Svuota</button>
     <br><br><br>
-      <div class="container">
+    <div class="container">
       <div class="row">
-    <ProdottoCarrello
-      v-for="elem in prodottiCarrello" :key="elem.id" :prodotti="elem"
-    ></ProdottoCarrello>
-    </div>
+        <ProdottoCarrello v-for="elem in prodottiCarrello" :key="elem.id" :prodotti="elem"></ProdottoCarrello>
+      </div>
     </div>
   </div>
 </template>

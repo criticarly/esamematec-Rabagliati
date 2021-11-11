@@ -1,7 +1,7 @@
 <template>
   <div>
 
-    <button @click="addToCart" type="button" class="">
+    <button @click="addToCart" type="button" :disabled="inventory<=0" :class="{disabledButton: (inventory<=0)}" >
       <slot></slot>
     </button>
    
@@ -13,9 +13,15 @@ export default {
    props: ["prodotto"],
   methods :{
     addToCart: function () {
+      this.prodotto[this.id].inventory = this.prodotto[this.id].inventory - 1
       this.$store.commit("AGGIUNGI_CARRELLO", this.prodotto);
     },
   },
+  computed: {
+    inventory: function () {
+      return this.prodotto[this.id].inventory;
+    },
+  }
 };     
 </script>
 

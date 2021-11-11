@@ -25,13 +25,12 @@
         </div>
       </b-card-text>
 
-      <BottoneCarrello v-bind:prodotto="prodotti">Aggiungi al carrello</BottoneCarrello>
+      <BottoneCarrello v-bind:prodotto="prodotti" >Aggiungi al carrello</BottoneCarrello>
       <button type="button" class="btn btn-link">
       <router-link class="prodotti-link" v-bind:to="{ name: 'Dettagli', params: { id: prodotti.id } }">Per saperne di più</router-link>
       </button>
     </b-card>    
-</div>
-
+  </div>
 </template>
 
 <script>
@@ -72,6 +71,4 @@ export default {
   font-weight: 100;
   color: #b97375;
 }
-
-
 </style>

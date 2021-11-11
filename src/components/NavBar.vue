@@ -3,10 +3,12 @@
     
     <nav>
       <div class="container-fluid">
-      <router-link v-bind:to="{ name: 'Home' }"><a class="navbar-brand" href="#">
-      <img src="https://cdn-icons-png.flaticon.com/512/775/775193.png" alt="" width="37" height="37">
-        My MakeUp Store
-        </a></router-link>
+        <router-link v-bind:to="{ name: 'Home' }">
+          <a class="navbar-brand" href="#">
+          <img src="https://cdn-icons-png.flaticon.com/512/775/775193.png" alt="" width="37" height="37">
+          My MakeUp Store
+          </a>
+        </router-link>
       </div>
       <router-link v-bind:to="{ name: 'Home' }"><img src="https://cdn-icons-png.flaticon.com/512/3557/3557187.png" alt="" width="19" height="19">&nbsp;Makeup</router-link>&nbsp;|&nbsp;
       <router-link v-bind:to="{ name: 'Recensioni' }"><img src="https://cdn-icons-png.flaticon.com/512/3331/3331104.png" alt="" width="19" height="19">&nbsp;Recensioni</router-link> &nbsp;|&nbsp;
