@@ -1,7 +1,7 @@
 <template>
   <div>
 
-    <button @click="addToCart" type="button" :disabled="inventory<=0" :class="{disabledButton: (inventory<=0)}" >
+    <button @click="addToCart" type="button" :disabled="inventory<=0" :class="{disabledButton: (inventory<=0)}">
       <slot></slot>
     </button>
    
@@ -10,16 +10,16 @@
 
 <script>
 export default { 
-   props: ["prodotto"],
+  props: ["prodotto"],
   methods :{
     addToCart: function () {
-      this.prodotto[this.id].inventory = this.prodotto[this.id].inventory - 1
       this.$store.commit("AGGIUNGI_CARRELLO", this.prodotto);
+      this.prodotto['inventory'] = this.prodotto['inventory'] - 1
     },
   },
   computed: {
     inventory: function () {
-      return this.prodotto[this.id].inventory;
+      return this.prodotto['inventory']
     },
   }
 };     
