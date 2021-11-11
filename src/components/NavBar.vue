@@ -53,8 +53,4 @@ nav > .brand {
   color: #2d2d34;
   text-decoration: none;
 }
-/*.nav .nav-item.router-link-exact-active {
-  color: #ffffff;
-  border-bottom: solid 2px #ffffff;
-}*/
 </style>

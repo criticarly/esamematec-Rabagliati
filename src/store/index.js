@@ -7,7 +7,6 @@ export default new Vuex.Store({
   state: {
     prodottiCarrello:[],
     reviews:[],
-    /*prossimoId: 3,*/
     prodotti: [
       {
         id: 1,
@@ -19,7 +18,6 @@ export default new Vuex.Store({
         image2: "https://www.sephora.it/on/demandware.static/-/Sites-masterCatalog_Sephora/default/dw5a14ef3c/images/hi-res/alternates/PID_alternate1/PID_alternate1_1600/P10018361_1.jpg",
         image3: "https://www.sephora.it/on/demandware.static/-/Sites-masterCatalog_Sephora/default/dw36a38511/images/hi-res/alternates/PID_alternate3/PID_alternate3_1226/P10018361_3.jpg",
         image4: "https://www.sephora.it/on/demandware.static/-/Sites-masterCatalog_Sephora/default/dwf78f1ea8/images/hi-res/alternates/PID_alternate4/PID_alternate4_1019/P10018361_4.jpg",
-        //selectedModel: 0,
         onSale: true,
         inventory: 2,
         price: 39.99,
@@ -35,7 +33,6 @@ export default new Vuex.Store({
         image2: "https://www.sephora.it/on/demandware.static/-/Sites-masterCatalog_Sephora/default/dw1f1395b1/images/hi-res/alternates/PID_alternate1/PID_alternate1_953/P10012159_1.jpg",
         image3: "https://www.sephora.it/on/demandware.static/-/Sites-masterCatalog_Sephora/default/dwfe125ae3/images/hi-res/alternates/PID_alternate2/PID_alternate2_840/P10012159_2.jpg",
         image4: "https://www.sephora.it/on/demandware.static/-/Sites-masterCatalog_Sephora/default/dwc933b2b2/images/hi-res/alternates/PID_alternate3/PID_alternate3_738/P10012159_3.jpg",
-        //selectedModel: 0,
         onSale: false,
         inventory: 0,
         price: 18.90,
@@ -51,7 +48,6 @@ export default new Vuex.Store({
         image2: "https://www.sephora.it/on/demandware.static/-/Sites-masterCatalog_Sephora/default/dw5af46988/images/hi-res/alternates/PID_alternate1/PID_alternate1_1/P3228024_1.jpg",
         image3: "https://www.sephora.it/on/demandware.static/-/Sites-masterCatalog_Sephora/default/dwc0170f1f/images/hi-res/alternates/PID_alternate4/PID_alternate4_330/P3228024_4.jpg",
         image4: "https://www.sephora.it/on/demandware.static/-/Sites-masterCatalog_Sephora/default/dwa06877e0/images/hi-res/alternates/PID_alternate5/PID_alternate5_1/P3228024_5.jpg",
-        //selectedModel: 0,
         onSale: true,
         inventory: 80,
         price: 29.90,
@@ -82,7 +78,6 @@ export default new Vuex.Store({
         image2:"https://www.sephora.it/on/demandware.static/-/Sites-masterCatalog_Sephora/default/dw26fe7928/images/hi-res/alternates/PID_alternate1/PID_alternate1_1304/P10015018_1.jpg",
         image3:"https://www.sephora.it/on/demandware.static/-/Sites-masterCatalog_Sephora/default/dw5b60b0e6/images/hi-res/alternates/PID_alternate2/PID_alternate2_1135/P10015018_2.jpg",
         image4:"https://www.sephora.it/on/demandware.static/-/Sites-masterCatalog_Sephora/default/dw8e65d900/images/hi-res/alternates/PID_alternate5/PID_alternate5_644/P10015018_5.jpg",
-        //selectedModel: 0,
         onSale: true,
         inventory: 70,
         price: 37,
@@ -113,7 +108,6 @@ export default new Vuex.Store({
         image2:"https://www.sephora.it/on/demandware.static/-/Sites-masterCatalog_Sephora/default/dw25134acf/images/hi-res/alternates/PID_alternate1/PID_alternate1_1125/P10013458_1.jpg",
         image3:"https://www.sephora.it/on/demandware.static/-/Sites-masterCatalog_Sephora/default/dw880ac18f/images/hi-res/alternates/PID_alternate2/PID_alternate2_980/P10013458_2.jpg",
         image4:"https://www.sephora.it/on/demandware.static/-/Sites-masterCatalog_Sephora/default/dwac87a3c6/images/hi-res/alternates/PID_alternate3/PID_alternate3_845/P10013458_3.jpg",
-        //selectedModel: 0,
         onSale: true,
         inventory: 25,
         price: 39.90,
@@ -129,7 +123,6 @@ export default new Vuex.Store({
         image2: "https://www.sephora.it/on/demandware.static/-/Sites-masterCatalog_Sephora/default/dw3d51b7d3/images/hi-res/alternates/PID_alternate1/PID_alternate1_1/P2578003_1.jpg",
         image3:"https://www.sephora.it/on/demandware.static/-/Sites-masterCatalog_Sephora/default/dw4e34993a/images/hi-res/alternates/PID_alternate2/PID_alternate2_1/P2578003_2.jpg",
         image4:"https://www.sephora.it/on/demandware.static/-/Sites-masterCatalog_Sephora/default/dw919dffa6/images/hi-res/alternates/PID_alternate3/PID_alternate3_1/P2578003_3.jpg",
-        //selectedModel: 0,
         onSale: true,
         inventory: 120,
         price: 29.90,
@@ -145,7 +138,6 @@ export default new Vuex.Store({
       image2: "https://www.sephora.it/on/demandware.static/-/Sites-masterCatalog_Sephora/default/dw422c79bc/images/hi-res/alternates/PID_alternate1/PID_alternate1_1116/P10013305_1.jpg",
       image3: "https://www.sephora.it/on/demandware.static/-/Sites-masterCatalog_Sephora/default/dwd12b9c2e/images/hi-res/alternates/PID_alternate5/PID_alternate5_568/P10013305_5.jpg",
       image4: "https://www.sephora.it/on/demandware.static/-/Sites-masterCatalog_Sephora/default/dw9fb420b3/images/hi-res/alternates/PID_alternate3/PID_alternate3_837/P10013305_3.jpg",
-      //selectedModel: 0,
       onSale: true,
       inventory: 120,
       price: 38.90,

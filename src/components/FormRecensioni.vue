@@ -3,8 +3,8 @@
 <div class="contact-image">
     <img src="https://cdn-icons-png.flaticon.com/512/3349/3349051.png" alt="rocket_contact"/>
 </div>
-<form method="post" class="review-form" @submit.prevent="onSubmit">
-          <h3>Lasciaci una recensione</h3> 
+      <form method="post" class="review-form" @submit.prevent="onSubmit">
+          <h3>Lasciaci una recensione</h3> <br>
           <p><b>Per noi la tua opinione è importante</b></p> 
           <div class="row">
             <div class="col-md-6">
@@ -87,7 +87,7 @@ export default{
 
 <style scoped>
 .contact-form{
-    background: #fff;
+    background: rgba(255, 255, 255, 0.699);
     margin-top: 10%;
     margin-bottom: 5%;
     width: 70%;
@@ -99,7 +99,7 @@ export default{
     text-align: center;
 }
 .contact-image img{
-    width: 11%;
+    width: 13%;
     margin-top: -3%;
 }
 .contact-form form{
@@ -119,19 +119,9 @@ export default{
     border: none;
     border-radius: 1rem;
     padding: 1.5%;
-    background: #dc3545;
+    background: #D9A3BC;
     font-weight: 600;
     color: #fff;
-    cursor: pointer;
-}
-.btnContactSubmit
-{
-    width: 50%;
-    border-radius: 1rem;
-    padding: 1.5%;
-    color: #fff;
-    background-color: #8C4D64;
-    border: none;
     cursor: pointer;
 }
 </style>
