@@ -40,9 +40,9 @@
                 <div class="col-lg-10 col-md-6">
                    <p>{{ prodotti.description }}</p>
                     <p v-if="prodotti.inventory > 10"><b>Disponibile</b></p>
-                    <p v-else-if="prodotti.inventory > 0">Disponibilità limitata</p>
-                    <p v-else>Non disponibile</p>
-                    <p v-show="prodotti.onSale">In vendita!</p>
+                    <p v-else-if="prodotti.inventory > 0"><b>Disponibilità limitata</b></p>
+                    <p v-else><b>Non disponibile</b></p>
+                    <p v-show="prodotti.onSale"><b>In vendita!</b></p>
                     <p>Acquistalo a soli {{ prodotti.price }} €</p>
                     <BottoneCarrello v-bind:prodotto="prodotti">Aggiungi al carrello</BottoneCarrello>
                 </div>

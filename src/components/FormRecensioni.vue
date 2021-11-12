@@ -38,7 +38,7 @@
                 <option>1</option>
               </select>
             </div>
-        </div>
+          </div>
     </form>
        <ul id="example-1"> 
       <li v-for="item in reviews" :key="item.review"> 
@@ -88,7 +88,7 @@ export default{
 <style scoped>
 .contact-form{
     background: rgba(255, 255, 255, 0.699);
-    margin-top: 10%;
+    margin-top: 6%;
     margin-bottom: 5%;
     width: 70%;
 }
