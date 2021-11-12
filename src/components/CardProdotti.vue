@@ -14,7 +14,7 @@
             <h4 class="card-title">{{ prodotti.product }}</h4>
             <div class="card-text">
               <p> Descrizione: {{prodotti.features}}</p>
-              <p v-if="prodotti.inventory >= 100"><b>Disponibile</b></p>
+              <p v-if="prodotti.inventory >= 10"><b>Disponibile</b></p>
               <p v-else-if="prodotti.inventory > 0"><b> Disponibilità limitata</b></p>
               <p v-else><b>Esaurito</b></p>
               <p v-show="prodotti.onSale"><b>Acquistalo!</b></p>

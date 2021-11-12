@@ -9,16 +9,16 @@
           <div class="row">
             <div class="col-md-6">
                 <div class="review-form">
-                  <label for="name">Nome:</label>
+                  <label for="name"></label>
                     <input id="name" v-model="name" required type="text" name="txtName" class="form-control" placeholder="Nome *" value="" />
                 </div>
                 <div class="review-form">
-                  <label for="surname">Cognome:</label>
+                  <label for="surname"></label>
                     <input id="surname" v-model="surname" required type="text" name="txtSurname" class="form-control" placeholder="Cognome *" value="" />
                 </div>
                 <div class="review-form">
-                  <label for="e-mail">E-mail:</label>
-                    <input type="text" v-model="email" class="form-control" placeholder="E-mail *" value="" />
+                  <label for="e-mail"></label>
+                    <input type="text" v-model="email" required class="form-control" placeholder="E-mail *" value="" />
                 </div><br>
                 <div class="review-form">
                     <input type="submit" name="btnSubmit" class="btnContact" value="Invia" />
@@ -26,7 +26,7 @@
             </div>
             <div class="col-md-6">
                 <div class="review-form">
-                  <label for="review">Recensione:</label>
+                  <label for="review"></label>
                     <textarea v-model="review" class="form-control" placeholder="La tua recensione *" style="width: 100%; height: 150px;"></textarea>
                 </div><br>
                 <label for="rating">Voto:</label>

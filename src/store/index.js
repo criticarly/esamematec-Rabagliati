@@ -49,7 +49,7 @@ export default new Vuex.Store({
         image3: "https://www.sephora.it/on/demandware.static/-/Sites-masterCatalog_Sephora/default/dwc0170f1f/images/hi-res/alternates/PID_alternate4/PID_alternate4_330/P3228024_4.jpg",
         image4: "https://www.sephora.it/on/demandware.static/-/Sites-masterCatalog_Sephora/default/dwa06877e0/images/hi-res/alternates/PID_alternate5/PID_alternate5_1/P3228024_5.jpg",
         onSale: true,
-        inventory: 80,
+        inventory: 15,
         price: 29.90,
         features: "Ciglia che si vedono dallo spazio! BADgal Bang! è il mascara best seller di Benefit che dona alle tue ciglia volume megagalattico con una tenuta fino a 36 ore!",
       },

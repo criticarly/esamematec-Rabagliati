@@ -5,7 +5,7 @@
       <div class="container-fluid">
         <router-link v-bind:to="{ name: 'Home' }">
           <a class="navbar-brand" href="#">
-          <img src="@/assets/borsetta.png" alt="" width="37" height="37"><!--https://cdn-icons-png.flaticon.com/512/775/775193.png-->
+          <img src="@/assets/borsetta.png" alt="" width="37" height="37">
           My MakeUp Store
           </a>
         </router-link>
